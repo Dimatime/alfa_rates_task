@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Gif</title>
+</head>
+<div style="text-align: center;">
+
+<body>
+
+<h1>Exchange rate</h1>
+
+<table align="center">
+    <thead>
+    <th>Валюта</th>
+    <th>Вчера</th>
+    <th>Сегодня</th>
+    </thead>
+
+    <tbody>
+    <p><td th:text ="${currency}"><p>
+    <p><td th:text ="${historyDayRates}"><p>
+    <p><td th:text ="${realTimeRates}"><p>
+    </tbody>
+
+</table>
+
+<p><img th:src="${gif}"/> </p>
+
+<td><a th:href="'/'">НАЗАД</a></td>
+</div>
+</body>
+</html>
+

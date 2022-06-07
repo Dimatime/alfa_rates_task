@@ -1,0 +1,7 @@
+api:
+  app_id: 76ab881ba9d3412bad7aae3cff39e9eb
+  giphy_id: YX6I6NfiPbObwc2MI8G6mPRCQ0fYVGn6
+rates:
+    listOfServers : "https://openexchangerates.org/api"
+giphy:
+    listOfServers: "https://api.giphy.com/v1/gifs/random"

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+
+</head>
+<div style="text-align: center;">
+<body>
+
+<h1>Exchange rate</h1>
+
+<table align="center">
+    <thead>
+    <tr>
+        <th>Валюта</th>
+        <th>Курс сегодня</th>
+        <th>Сравнить</th>
+    </tr>
+    </thead>
+    <tbody>
+    <div th:each="i : ${ratesMap}">
+        <tr>
+            <td th:text="${i.getKey()}"/>
+            <td th:text="${i.getValue()}"/>
+            <td><a th:href="'/' + ${i.getKey()}">сравнить</a></td>
+        </tr>
+    </div>
+    </tbody>
+    </div>
+</table>
+
+
+
+
+
+</table>
+</body>
+</html>
