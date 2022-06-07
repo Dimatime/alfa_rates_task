@@ -13,3 +13,14 @@
 
 Стек:
 Spring Boot 2, Gradle, Java, API (Feign), Thymeleaf.
+
+Docker
+
+Для создания образа Docker перейти в корневую директорию проекта,
+где лежит фаил Dockerfile:
+
+docker build docker build . -t giphy-01
+
+Запуск:
+
+docker run -p 8080:8080 giphy-01
