@@ -57,7 +57,7 @@ class AlfaApplicationTests {
                         new GiphyModel(
                                 new GiphyModel.GiphyData(
                                         new GiphyModel.Images(
-                                                new GiphyModel.OriginalImages("url")
+                                                new GiphyModel.Original("url")
                                         )
                                 )
                         )

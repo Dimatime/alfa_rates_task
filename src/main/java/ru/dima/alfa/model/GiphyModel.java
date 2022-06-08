@@ -4,10 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
-
-import java.util.HashMap;
-import java.util.Map;
 
 
 @Data
@@ -20,19 +16,22 @@ public class GiphyModel {
 
     @Data
     @AllArgsConstructor
+    @NoArgsConstructor
     public static class GiphyData {
         private Images images;
     }
 
     @Data
     @AllArgsConstructor
+    @NoArgsConstructor
     public static class Images {
-        private OriginalImages original;
+        private Original original;
     }
 
     @Data
     @AllArgsConstructor
-    public static class OriginalImages {
+    @NoArgsConstructor
+    public static class Original {
         private String url;
     }
 }
